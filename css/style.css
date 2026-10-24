@@ -1,0 +1,158 @@
+:root {
+  --white-color: #FFFFFF;
+  --nav-color: #292929;
+  --black-color: #000000;
+}
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Nav */
+.nav {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  background-color: var(--white-color);
+}
+.nav__container {
+  max-width: calc(1920px - 275px * 2);
+  width: 100%;
+  margin: 0 auto;
+}
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 72px;
+  margin-left: -113px;
+}
+.nav__menu a {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.nav__buttons {
+  display: flex;
+  gap:  35px;
+  align-items: center;
+}
+.nav__buttons-link {
+  color: var(--black-color);
+  font-size: 20px;
+}
+.nav__buttons-button {
+  padding: 13px 50px;
+  background-color: #01996D;
+  border-radius: 4px;
+  border: none;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+
+
+/* Hiro */
+.hero {
+  background-image: url(../img/hiro.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__container {
+  max-width: calc(1920px - 275px * 2);
+  margin: 0 auto;
+}
+.hero__inner {
+  padding-top: 170px;
+  padding-bottom: 336px;
+}
+.hero__title {
+  font-family: "Georgia", serif;
+  color: #01996D;
+  font-size: 65px;
+  font-weight: 700;
+  max-width: 440px;
+  margin-bottom: 33px;
+}
+.hero__text {
+  font-size: 20px;
+  color: #484848;
+  max-width: 420px;
+  line-height: 27px;
+  margin-bottom: 55px;
+}
+.hero__button {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: #01996D;
+  font-size: 20px;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+  .nav__container,
+  .hero__container {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .nav__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .nav__menu {
+    margin: 0;
+  }
+    .hero {
+    background-position: left center;
+  }
+  .hero__inner {
+    text-align: center;
+  }
+  .hero__title {
+    margin: 0 auto 20px;
+  }
+  .hero__text {
+    margin: 0 auto 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav__menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nav__buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
