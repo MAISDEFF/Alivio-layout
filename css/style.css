@@ -271,6 +271,38 @@ a {
   width: 100%;
 }
 
+/* Product */
+.product {
+  padding-top: 120px;
+  padding-bottom: 182px;
+}
+.product__container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+.product__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.product__photo {
+}
+.product__card {
+}
+.product__card-title {
+}
+.product__card-name {
+}
+.product__card-list {
+}
+.product__info {
+}
+.product__title {
+}
+.product__text {
+}
+.product__button {
+}
+
 
 @media screen and (max-width: 1440px) {
   .nav__container,
