@@ -221,12 +221,62 @@ a {
   max-width: 441px;
 }
 
+/* Video */
+.story {
+  background-color: #245852;
+  padding-top: 229px;
+  padding-bottom: 110px;
+}
+.story__container {
+  max-width: calc(1920px - 206px * 2);
+  width: 100%;
+  margin: 0 auto;
+}
+.story__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.story__desc-title {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Georgia", serif;
+  color: #ffffff;
+  line-height: 78.5px;
+  max-width: 580px;
+  margin-bottom: 30px;
+}
+.story__desc-text {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 39.25px;
+  margin-bottom: 57px;
+}
+.story__desc-button {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: #01996D;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 25px;
+  cursor: pointer;
+}
+.story__video {
+  max-width: 890px;
+  height: 500px;
+}
+.story__video video {
+  width: 100%;
+}
 
 
 @media screen and (max-width: 1440px) {
   .nav__container,
   .hero__container, 
-  .steps__container {
+  .steps__container,
+  .story__container {
     padding: 0 15px;
   }
   .steps__inner {
@@ -265,6 +315,22 @@ a {
   }
   .steps__card:nth-child(3) .steps__card-title {
     margin-top: 15px;
+  }
+  .story__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .story__desc-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .story__desc-text {
+    text-align: center;
+  }
+  .story__desc-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 1240px) {
